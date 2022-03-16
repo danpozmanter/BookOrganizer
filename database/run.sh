@@ -1,0 +1,1 @@
+docker run --name bookcontainer -e POSTGRES_USER=$DEV_PG_USER -e POSTGRES_PASSWORD=$DEV_PG_PASSWORD -p $DEV_PG_PORT:5432 -d postgres

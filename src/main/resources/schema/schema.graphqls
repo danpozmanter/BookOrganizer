@@ -1,0 +1,36 @@
+type Query {
+    booksByFields(
+        title: String,
+        author: String,
+        genre: String,
+        subgenre: String,
+        collection: String,
+        location: String
+    ): [Book]
+    booksByTitle(title: String!): [Book]
+    booksByAuthor(author: String!): [Book]
+    booksByGenre(genre: String!): [Book]
+}
+
+type Mutation {
+    addBook(input: BookInput!): Book
+}
+
+input BookInput {
+    title: String
+    author: String
+    genre: String
+    subgenre: String
+    collection: String
+    location: String
+}
+
+type Book {
+    id: ID
+    title: String
+    author: String
+    genre: String
+    subgenre: String
+    collection: String
+    location: String
+}
