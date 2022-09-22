@@ -17,8 +17,6 @@ class CrudBookMutation (private val repository: CrudBookRepository) {
 
     @DgsMutation
     suspend fun addBook(dataFetchingEnvironment: DataFetchingEnvironment, @InputArgument input: BookInput): Book {
-        // Makes use of implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.1")
-        // To automatically map from JSON to BookInput
         // For convenience, I am reusing the CrudBookRepository and the Book data class.
         // However, in practice I might want to use an additional repository a separate data class for inserts,
         // To allow a stricter Book definition with a non-nullable ID for use within the application generally.

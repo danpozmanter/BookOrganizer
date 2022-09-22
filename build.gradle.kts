@@ -28,7 +28,6 @@ dependencies {
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.5")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.0-native-mt")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.1")
 	testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.3")
 	testImplementation("io.projectreactor:reactor-test:3.4.14")
 }
